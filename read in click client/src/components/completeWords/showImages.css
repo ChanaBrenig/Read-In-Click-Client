@@ -1,0 +1,24 @@
+.imgFamily{
+    max-height:140px;
+    max-width:140px;
+    height:auto;
+    width:auto;
+}
+/* .btnShow{
+    padding: 5px;
+    background-attachment: fixed;
+    background-color: crimson(252, 200, 58);
+    border-radius: 2px,2px,2px,2px;
+    height:100px;
+    width: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(46, 151, 216);
+    color:rgb(16, 16, 148);
+    border-radius: 50%;
+    flex-wrap: wrap;
+    margin: 50px;
+    padding: 50px;
+    border: 3px solid deeppink(46, 151, 216);
+} */

@@ -1,0 +1,58 @@
+.btntHoli{
+    width: 120px;
+    height: 120px;
+    /* background-attachment: fixed; */
+    /* background-color: crimson(252, 200, 58); */
+    /* border-radius: 2px,2px,2px,2px; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bold;
+    /* color: rgb(216, 46, 117); */
+    /* color:rgb(16, 16, 148); */
+    border-radius: 50%;
+    flex-wrap: wrap;
+    margin: 30px;
+    /* padding: 50px; */
+    border: 5px solid rgb(172, 2, 73);
+    /* border: 3px solid black; */
+}
+.btnHoliday{
+    padding: 5px;
+    background-attachment: fixed;
+    /* background-color: rgb(252, 200, 58); */
+    border-radius: 2px,2px,2px,2px;
+    height:120px;
+    width: 120px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(216, 46, 88);
+    border-radius: 50%;
+    flex-wrap: wrap;
+    margin: 50px;
+    /* padding: 50px; */
+    border: 4px solid rgb(172, 2, 73);
+}
+.btns{
+    display:flex;
+    justify-content:space-around;  
+    padding:20px;
+    flex-wrap: wrap;
+    align-items: center;
+    /* height:50%; */
+    text-align:center;
+    /* position:absolute */
+    width: 100%;
+    height: 600px;
+    
+    }
+    .titleHoli{
+        align-items: center;
+        text-align:center;
+        color: rgb(172, 2, 73);
+
+    }
+    .gnrl{
+        text-align: center;
+        align-items: center;
+    }

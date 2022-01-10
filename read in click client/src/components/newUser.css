@@ -1,0 +1,19 @@
+.genericDiv{
+    position:absolute;
+	left:50%;
+	top:30%;
+	width:200px;
+	height:200px;
+    margin:-100px 0 0 -100px;
+    border: 5px solid darkblue;
+    /* width: 300px; */
+    /* margin: 10%; */
+    padding: 10%;
+}
+.internalDiv{
+    /* width:340px; */
+    padding:5px;
+    /* border:2px dashed blue; */
+    /* margin:18px; */
+    text-align: right;
+}

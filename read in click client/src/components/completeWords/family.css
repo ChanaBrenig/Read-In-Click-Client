@@ -1,0 +1,16 @@
+.generalDivFamily{
+    align-items: center;
+    text-align: center
+}
+.myCenter {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image{
+      width:30%;
+      height:30%
+  }
+   .MuiTableCell-root{
+    /* background-color: rgb(255, 122, 215); */
+    /* background-color: #3ab38f;  */
+  }

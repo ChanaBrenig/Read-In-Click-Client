@@ -1,0 +1,25 @@
+{
+    "holiday": "Rosh Hashana",
+    "check": [
+        {
+            "http": "https://www.picjew.com/Thumbnail/0312201419124144058314208640bih55vyoc42kymreu1a14f1q.jpg",
+            "possibilities": ["רימון", "תפוח", "אגס"]
+        },
+        {
+            "http": "https://www.picjew.com/Thumbnail/0509201113145254539941753419hi3ltyuciqkiiud41suqs0wv.jpg",
+            "possibilities": ["דבש"]
+        },
+        {
+            "http": "https://www.picjew.com/Thumbnail/2108201107430358000001588910k4ty1xlcyczjuyodz4mls0vp.jpg",
+            "possibilities": ["תפוח"]
+        },
+        {
+            "http": "https://publicdomainvectors.org/tn_img/1492093987.png",
+            "possibilities": ["דג"]
+        },
+        {
+            "http": "https://publicdomainvectors.org/tn_img/Surreal-Bow-River-Canada.png",
+            "possibilities": ["תשליך"]
+        }
+    ]
+}

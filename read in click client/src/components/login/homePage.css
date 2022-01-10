@@ -1,0 +1,46 @@
+.wrrapbt{
+    text-align: center;
+}
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150px;
+    text-align: center
+}
+.bt{
+    font-size:30px;
+}
+.btnLogin{
+    color:black;
+    background-color:blueviolet;
+    width:100px;
+    height:30px
+}
+.generakDivHomePage{
+    background-image: url('./image/reka1.png');
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-align: center
+}
+.lableLogin{
+ color: darkmagenta;  
+ font-size: x-large; 
+}
+.btnSignUp{
+    color:black;
+    background-color:blueviolet;
+    width:170px;
+    height:50px ;
+    font-size: large;
+}
+body{
+    /* background-image: url('./image/reka1.png');
+
+    /* background-image: url('./image/reka1.png'); */
+    /* background-repeat:no-repeat;
+    background-size: 100%;  */ 
+
+}

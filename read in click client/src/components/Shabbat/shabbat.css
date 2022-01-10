@@ -1,0 +1,15 @@
+.imgShabbat{
+    width:180px;
+    height:160px
+}
+.generalDivFamily{
+    align-items: center;
+    text-align: center
+}
+.myCenter {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tableShabbat{
+      background-color: lavenderblush;
+  }
