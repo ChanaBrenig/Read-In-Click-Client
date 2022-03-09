@@ -4,18 +4,17 @@ import './oneSyllable.css'
 import { useHistory } from "react-router-dom";
 
 const OneSyllable = () => {
-    const [nikud, setNikud] = useState('kamatz');
+    const [nikud, setNikud] = useState('');
+    const [wordList, setWordList] = useState([]);
+    const [flag, setFlag] = useState(false);
+    const url = `http://localhost:3001/getWords/${nikud}`;
     useEffect(() => {
-        getWordApi(nikud)
-            // .then(response => response.json())
-            .then(
-                // history.push("ShoWord")
+      fetch(url)
+        .then(res => res.json())
+        .then(data => {setWordList(data); setFlag(true)})
+        .catch(err => console.log(err))
+    }, [nikud]);
 
-            // <ShoWord data={data} />
-            )
-            .catch(error => { console.error(error) })
-    }, [nikud])
-    console.log({ nikud });
 
     return (
         <div className="generalOneSyllable">
@@ -24,31 +23,11 @@ const OneSyllable = () => {
             <button className="btnOneSyllable" onClick={() => setNikud('cholam')}>cholam</button>
             <button className="btnOneSyllable" onClick={() => setNikud('segol')}>segol</button>
             <button className="btnOneSyllable" onClick={() => setNikud('shuruk')}>shuruk</button>
+            
+            {flag ?<ShoWord wordList = {wordList} /> : <div></div>}
+           
         </div>
     )
-}
-export const getWordApi = (nikud) => {
-    debugger
-    return fetch(`http://localhost:3001/getWords/${nikud}`, {
-        method: "GET",
-        headers: {
-            'Content-Type': 'application/json;charset=utf-8'
-        },
-        // body: JSON.stringify(nikud),
-    })
-        .then(response => {
-            console.log('success!!!!!');
-
-            // if (response.ok) {
-            //     response.json()
-            //         .then(() => {
-            //             console.log(nikud)
-            //         })
-            // } else {
-            //     response.json()
-            //         .then(() => error1 => { alert(JSON.stringify(error1.errors)) }).catch(error => { console.log(error); });
-            // }
-        })
 }
 
 

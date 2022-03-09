@@ -1,0 +1,10 @@
+.btnCheck{
+   /* // size: 300px; */
+    width: 100px;
+    height: 80px;
+    font-size:30px;
+    color: rgb(252, 250, 251);
+    background-color: red;
+    border:5px solid black;
+
+}

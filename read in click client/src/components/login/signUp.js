@@ -6,6 +6,8 @@ import { useHistory } from 'react-router-dom'
 import './signUp.css'
 import './homePage.css'
 import TextField from '@mui/material/TextField';
+import Button from '@material-ui/core/Button';
+
 
 
 
@@ -30,7 +32,7 @@ function SignUp() {
 
     return (
         <div className="generalDivSignUp">
-            <div className="container">
+            
                 <br />
                 <br />
                 <br />
@@ -64,7 +66,7 @@ function SignUp() {
                 <br />
                 <br />
                 <br />
-    <button  className="btnSignUp" onClick={api}> לשמירת הנתונים</button>
+                <Button variant="contained" color="secondary" onClick={api}> לשמירת הנתונים</Button>
 
                 {/* <button className="wrrapbt" onClick={api}>לשמירת הנתונים</button> */}
                 <br />
@@ -76,7 +78,7 @@ function SignUp() {
                 <br />
                 <br />
               
-            </div>
+            
         </div>)
 }
 

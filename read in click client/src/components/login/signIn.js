@@ -57,7 +57,7 @@ function SignIn() {
     <br/>
     {/* <Button   className="wrrapbt" className="btnLogin" onClick={api}>
     לאישור לחץ כאן</Button> */}
-    <button  className="btnLogin" onClick={()=>{api()}}> לאישור לחץ כאן</button>
+    <Button variant="contained" color="secondary" onClick={()=>{api()}}> לאישור לחץ כאן</Button>
       {/* <button className="wrrapbt" onClick={api}>לאישור לחץ כאן</button> */}
       <br/>
     

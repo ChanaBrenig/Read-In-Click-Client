@@ -17,6 +17,7 @@ import zifzuf from './image/zifzuf.gif'
 import goblet from './image/goblet.jpg'
 import './shabbat.css'
 import useSpeechToText from 'react-hook-speech-to-text';
+import CheckValue from './checkValue'
 
 
 // const shabbatImage = [
@@ -27,25 +28,18 @@ import useSpeechToText from 'react-hook-speech-to-text';
 //     "https://www.canstockphoto.co.il/%D7%98%D7%A7%D7%A1-%D7%A9%D7%91%D7%AA-1767337.html",
 //     "https://www.canstockphoto.co.il/%D7%90%D7%95%D7%9B%D7%9C-%D7%91%D7%99%D7%A9%D7%95%D7%9C-bread-9607200.html",
 // ]
+
 const numbers = [1, 2, 3, 4, 5];
 const doubled = numbers.map((number) => number * 2);
 console.log(doubled);
 
 const shabbatImage = [bouquet, wine, bracha, chalot, flowers, candles, zifzuf, goblet]
 
-// export function ShabbatPrint() {
 const ezer =
     shabbatImage.map((img) =>
         < img src="img" ></img >)
 
-
-// return ( <img>img</img> )
-
-//     return (<div>
-//     </div>)
-// }
-
-
+// onChange={(e) => { setId(e.target.value) }}
 function createData(name, calories, fat, carbs, protein) {
     return { name, calories, fat, carbs, protein };
 }
@@ -72,7 +66,8 @@ export default function Shabbat() {
                         <TableCell align="right">תמונה</TableCell>
                         <TableCell align="right"></TableCell>
                         <TableCell align="right"></TableCell>
-                        <TableCell align="right">StockWrite </TableCell>
+                        <TableCell align="right">מה מצויר בתמונה? </TableCell>
+                        <TableCell align="right">בדיקה </TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -85,6 +80,7 @@ export default function Shabbat() {
                             <TableCell align="right"></TableCell>
                             <TableCell align="right"></TableCell>
                             <TableCell align="right"><StockWrite /></TableCell>
+                            <TableCell align="right"><CheckValue /></TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

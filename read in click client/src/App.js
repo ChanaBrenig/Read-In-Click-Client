@@ -14,8 +14,6 @@ import Routing from './components/router';
 
 function App() {
 
-
-
   return (
   <DndProvider backend={HTML5Backend}>
     <div>

@@ -2,16 +2,14 @@ import React from 'react'
 
 
 const ShoWord = (props) => {
-    return(<div>ShoWord Success!!!!!!!!!</div>)
-    // return
-    // (
-    //     <div>
-    //         hello
-    //     { props.data.map((word)=>{
-    //         <div></div>
-    //     }) }
-    //     </div>
-    // )
+    return(<div>
+        <div>ShoWord Success!!!!!!!!!</div>
+        <div>{ props.wordList.words[0].words.map((item)=>(
+            <div>{item}</div>
+        ))}</div> 
+       
+        </div>
+    )
 
 
 }
