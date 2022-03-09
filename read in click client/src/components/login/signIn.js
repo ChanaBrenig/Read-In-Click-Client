@@ -47,7 +47,7 @@ function SignIn() {
     <br/>
     <br/>
     <br/>
-      <div className="wrrapbt" className="lableLogin">הכנס מספר זהות</div>
+      <div  className="lableLogin">הכנס מספר זהות</div>
       <br/>
       {/* <input className="wrrapbt" onChange={(e) => { setId(e.target.value) }}></input> */}
       <TextField  color="secondary" onChange={(e) => { setId(e.target.value) }} focused />

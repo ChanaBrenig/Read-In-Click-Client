@@ -41,13 +41,13 @@ function SignUp() {
                 <br />
                 
         
-                <div className="wrrapbt" className="lableLogin">הכנס שם פרטי</div>
+                <div  className="lableLogin">הכנס שם פרטי</div>
                 <TextField  color="secondary" onChange={(e) => { setFirstName(e.target.value) }} focused />
                 {/* <input className="wrrapbt" onChange={(e) => { setFirstName(e.target.value) }} /> */}
                 <br />
                 <br />
 
-                <div className="wrrapbt" className="lableLogin">הכנס שם משפחה</div>
+                <div  className="lableLogin">הכנס שם משפחה</div>
 
                 <TextField  color="secondary" onChange={(e) => { setLastName(e.target.value) }} focused />
 
@@ -55,7 +55,7 @@ function SignUp() {
                 <br />
                 <br />
 
-                <div className="wrrapbt" className="lableLogin">הכנס מספר זהות</div>
+                <div  className="lableLogin">הכנס מספר זהות</div>
                 
                 <TextField  color="secondary" onChange={(e) => { setUserId(e.target.value) }} focused />
 
