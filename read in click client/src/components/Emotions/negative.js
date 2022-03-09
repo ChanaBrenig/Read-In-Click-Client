@@ -81,7 +81,6 @@ export default function Negative(props) {
         if(id<0){
         setBoard((board) => [...board, pictureList[0]]);}
     }
-    // className="Pictures"
     return (<div>
 
         <div style={{ textAlign: "center" }}>רגשות שליליים</div>

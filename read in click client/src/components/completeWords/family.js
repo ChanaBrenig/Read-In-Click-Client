@@ -43,12 +43,11 @@ const columns = [
 ];
 
 function createData(theImage, theWord, VX, stockWords) {
-    //   const density = population / size;
     return { theImage, theWord, VX, stockWords };
 }
-//ArrayFromServer.map(word, index) => <div id={index+1}>{word}</div> 
-let arrWordFamily = [<div id="1">סַבָּא</div>, <div id="2">סָבְתָא</div>, <div id="3">אַבָּא</div>, <div id="4">אִמָּא</div>,
-<div id="5">אָח</div>, <div id="6">אָחוֹת</div>, <div id="7">תִּינוֹק</div>, <div id="8">תְּאוֹמִים</div>,]
+
+let arrWordFamily = [<div id="1">סַ__א</div>, <div id="2">סָ__תָא</div>, <div id="3">__בָּא</div>, <div id="4">אִ__א</div>,
+<div id="5">אָ__</div>, <div id="6">אָחוֹ__</div>, <div id="7">תִּי__ק</div>, <div id="8">תְּאוֹ__ם</div>,]
 
 const rows = [
     createData(<ShowImages src={grandfather} />, <GetWord word={arrWordFamily[0]} />, 'V', <StockWords wordId={arrWordFamily[0].props.id} />),
@@ -71,7 +70,6 @@ const useStyles = makeStyles({
         maxHeight: '100%',
     },
 });
-
 export default function StickyHeadTable() {
     const classes = useStyles();
     const [page, setPage] = React.useState(0);
@@ -80,7 +78,6 @@ export default function StickyHeadTable() {
     useEffect(() => {
         debugger
         console.log(arrWordFamily[0].id)
-
     },
         []);
     return (
@@ -104,7 +101,6 @@ export default function StickyHeadTable() {
                         {rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row, index) => {
                             return ( 
                                 <TableRow hover role="checkbox" tabIndex={-1} key={index}>
-                                    {/* //tabIndex={-1} key={row.code} */}
                                     {columns.map((column) => {
                                         const value = row[column.id];
                                         return (
@@ -119,10 +115,7 @@ export default function StickyHeadTable() {
                     </TableBody>
                 </Table>
             </TableContainer>
-
-          
-
-        </Paper>
+   </Paper>
 
     );
 

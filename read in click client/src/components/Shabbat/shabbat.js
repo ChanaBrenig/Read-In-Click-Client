@@ -39,7 +39,6 @@ const ezer =
     shabbatImage.map((img) =>
         < img src="img" ></img >)
 
-// onChange={(e) => { setId(e.target.value) }}
 function createData(name, calories, fat, carbs, protein) {
     return { name, calories, fat, carbs, protein };
 }
@@ -88,6 +87,4 @@ export default function Shabbat() {
         </TableContainer>
 
     );
-    // <useSpeechToText />
-
 }

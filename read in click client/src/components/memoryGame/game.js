@@ -161,9 +161,9 @@ export default function Game(props ) {
   return (
     <div className="App">
       <header>
-        <h3>Play the Flip card game</h3>
+        <h3>משחק הזיכרון</h3>
         <div>
-          Select two cards with same content consequtively to make them vanish
+          בחר שני כרטיסים והתאם תמונה למילה
         </div>
       </header>
       <div className="container">

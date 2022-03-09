@@ -1,6 +1,5 @@
 
 export const signUpApi = (user) => {
-    //console.log("user", user);
     return fetch(`http://localhost:3001/signUp`, {
         method: "POST",
         headers: {
@@ -12,7 +11,6 @@ export const signUpApi = (user) => {
             if (response.ok) {
                 response.json()
                     .then(() => {
-                        alert("hello" + " " + user.user.firstName);
                         console.log(user)
                     })
             } else {
@@ -36,7 +34,7 @@ export const signInApi = (user) => {
                 debugger
                 response.json()
                     .then(() => {
-                        alert("hello" + " " + user.name);
+                        console.log(user.name);
                     })
             } else {
                 response.json()

@@ -17,8 +17,8 @@ const Mishkal = () => {
     }
     return (
         <div>
-            <h1 className="myTitle">Welcome To Mishkal</h1>
-            <h2 className="myTitleH2">Click On Your choice</h2>
+            <h1 className="myTitle">ברוכים הבאים למשקל!!!</h1>
+            <h2 className="myTitleH2">לחץ על הכפתור שברצונך</h2>
             <div className="btns">
                 <button className="btn" onClick={oneSyllable}>הברה אחת</button>
                 <button className="btn" onClick={twoSyllable}>שתי הברות </button>
