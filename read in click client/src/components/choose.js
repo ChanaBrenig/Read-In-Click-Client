@@ -35,7 +35,7 @@ const Choose = () => {
             <div className="btns">
                 <button className="btn" onClick={goToMishkal}>משקל</button>
                 <button className="btn" variant="contained" onClick={goToCompleteWordsFamily}>משפחה </button>
-                <button className="btn" onClick={goToHoliday}>חגים</button>
+                {/* <button className="btn" onClick={goToHoliday}>חגים</button> */}
                 <button className="btn" onClick={goToShabbat}>שבת</button>
                 <button className="btn" onClick={goToDownloads}>הדפסות</button>
                 <button className="btn" onClick={goToMemoryGame}>משחק הזיכרון</button>
