@@ -40,7 +40,6 @@ const Choose = () => {
                 <button className="btn" onClick={goToDownloads}>הדפסות</button>
                 <button className="btn" onClick={goToMemoryGame}>משחק הזיכרון</button>
                 <button className="btn" onClick={goToEmotions}>רגשות</button>
-                {/* <button className="btn">Button 6</button> */}
             </div>
         </div>
     )
