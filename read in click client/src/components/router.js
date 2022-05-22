@@ -221,9 +221,9 @@ function Routing() {
                     <Route path="/DifferentVowel">
                         <DifferentVowel />
                     </Route>
-                    <Route path="/SameVowel">
+                    {/* <Route path="/SameVowel">
                         <SameVowel />
-                    </Route>
+                    </Route> */}
                     <Route path="/Consonant">
                         <Consonant />
                     </Route>

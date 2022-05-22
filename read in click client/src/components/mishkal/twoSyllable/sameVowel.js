@@ -1,25 +1,34 @@
-import ShoWord from '../shoWord'
 import React, { useState, useEffect } from 'react';
+import ShoWord from '../shoWord'
 
 const SameVowel = () => {
-    const [nikud, setNikud] = useState('')
+      const [nikud, setNikud] = useState('');
+    const [wordList, setWordList] = useState([]);
+    const [flag, setFlag] = useState(false);
+    const url = `http://localhost:3001/getWords/${nikud}`;
     useEffect(() => {
-
-        fetch('localhost:3001/word/get' + nikud)
-            .then(response => response.json())
-            .then(data => <ShoWord data={data} />)
-            .catch(error => { console.error(error) })
-     } , [nikud])
+        fetch(url)
+            .then(res => res.json())
+            .then(data => { setWordList(data); setFlag(true) })
+            .catch(err => console.log(err))
+    }, [nikud]);
     
     return (
         <div>
-            <button onClick={() => setNikud('kamatzkamatz')}>kamatzkamatz</button>
+              <button className="btnOneSyllable" onClick={() => setNikud('kamatzkamatz')}>קמץ\ פתח</button>
+             <button className="btnOneSyllable" onClick={() => setNikud('chirikchirik')}>חיריק חיריק</button>
+             <button className="btnOneSyllable" onClick={() => setNikud('segolsegol')}>צירה\ סגול</button>
+             <button className="btnOneSyllable" onClick={() => setNikud('cholamcholam')}>חולם חולם</button>
+             <button className="btnOneSyllable" onClick={() => setNikud('shurukshuruk')}>שורוק\ קובוץ</button>
+            { /* <button onClick={() => setNikud('kamatzkamatz')}>kamatzkamatz</button>
             <button onClick={() => setNikud('chirikchirik')}>chirikchirik</button>
-            <button onClick={() => setNikud('cholamcholam')}>cholamcholam</button>
-            {/* <button onClick={() => setNikud('shurukshuruk')}>shurukshuruk</button>
-            <button onClick={() => setNikud('segolsegol')}>segolsegol</button> */}
+            <button onClick={() => setNikud('cholamcholam')}>cholamcholam</button> */
+            /* <button onClick={() => setNikud('shurukshuruk')}>shurukshuruk</button>
+    <button onClick={() => setNikud('segolsegol')}>segolsegol</button> */ }
+        {flag ? <ShoWord wordList={wordList} /> : <div></div>}
+
         </div>
     )
 
 }
-export default SameVowel;
+export default SameVowel

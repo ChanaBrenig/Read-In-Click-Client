@@ -34,16 +34,21 @@ const Downloads = () => {
     //         });
     //     };
     return (
+        // <div className="generalMishkat">
+
         <div className="generalDivDown">
-            <h1>ספר מה אתה רוצה לצייר</h1>
+            <h1>מה ברצונך לצייר?</h1>
             <textarea rows="15" cols="60" name="textarea1"></textarea>
             <br />
             <br />
             <a href="https://magic-painter.netlify.app/">למעבר לצייר הקש כאן</a>
+            <br/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             {/* <button onClick={ReactPainter}></button> */}
             {/* <ReactPainter/> */}
-        </div>
-        //             <div className="App">
+        {/* </div> */}
+        <div/>
+
+        {/* //             <div className="App">
         //                 <h1>Hello CodeSandbox</h1>
         //                 <h2>Start editing to see some magic happen!</h2>
         //                 <div className="mb5">
@@ -51,9 +56,10 @@ const Downloads = () => {
         //                 </div>
         //                 <div id="divToPrint" ref={inputRef}>
         //                     {/* <Document /> */}
-        //                 </div>
-        //             </div>
-        //         </>
+        {/* //                 </div> */}
+                     </div>
+        
+        //         </> */}
     );
 }
 

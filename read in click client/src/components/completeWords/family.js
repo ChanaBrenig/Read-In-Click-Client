@@ -36,28 +36,28 @@ const titleStyle = {
 }
 
 const columns = [
-    { id: 'theImage', label: <div style={titleStyle}>The Image</div>, minWidth: 170 },
-    { id: 'theWord', label: <div style={titleStyle}>The Words</div>, minWidth: 100 },
-    { id: 'VX', label: <div style={titleStyle}>V/X</div>, minWidth: 100 },
-    { id: 'stockWords', label: <div style={titleStyle}>StockWords</div>, minWidth: 100 },
+    { id: 'theImage', label: <div style={titleStyle}>התמונה</div>, minWidth: 170 },
+    { id: 'theWord', label: <div style={titleStyle}>המילה להשלמה</div>, minWidth: 100 },
+    // { id: 'VX', label: <div style={titleStyle}>V/X</div>, minWidth: 100 },
+    { id: 'stockWords', label: <div style={titleStyle}>מאגר מילים</div>, minWidth: 100 },
 ];
 
-function createData(theImage, theWord, VX, stockWords) {
-    return { theImage, theWord, VX, stockWords };
+function createData(theImage, theWord, stockWords) {
+    return { theImage, theWord,  stockWords };
 }
 
 let arrWordFamily = [<div id="1">סַ__א</div>, <div id="2">סָ__תָא</div>, <div id="3">__בָּא</div>, <div id="4">אִ__א</div>,
 <div id="5">אָ__</div>, <div id="6">אָחוֹ__</div>, <div id="7">תִּי__ק</div>, <div id="8">תְּאוֹ__ם</div>,]
 
 const rows = [
-    createData(<ShowImages src={grandfather} />, <GetWord word={arrWordFamily[0]} />, 'V', <StockWords wordId={arrWordFamily[0].props.id} />),
-    createData(<ShowImages src={grandma} />, <GetWord word={arrWordFamily[1]} />, 'V', <StockWords wordId={arrWordFamily[1].props.id} />),
-    createData(<ShowImages src={father} />, <GetWord word={arrWordFamily[2]} />, 'V', <StockWords wordId={arrWordFamily[2].props.id} />),
-    createData(<ShowImages src={mother} />, <GetWord word={arrWordFamily[3]} />, 'V', <StockWords wordId={arrWordFamily[3].props.id} />),
-    createData(<ShowImages src={brother} />, <GetWord word={arrWordFamily[4]} />, 'V', <StockWords wordId={arrWordFamily[4].props.id} />),
-    createData(<ShowImages src={sister} />, <GetWord word={arrWordFamily[5]} />, 'V', <StockWords wordId={arrWordFamily[5].props.id} />),
-    createData(<ShowImages src={baby} />, <GetWord word={arrWordFamily[6]} />, 'V', <StockWords wordId={arrWordFamily[6].props.id} />),
-    createData(<ShowImages src={twins} />, <GetWord word={arrWordFamily[7]} />, 'V', <StockWords wordId={arrWordFamily[7].props.id} />),
+    createData(<ShowImages src={grandfather} />, <GetWord word={arrWordFamily[0]} />, <StockWords wordId={arrWordFamily[0].props.id} />),
+    createData(<ShowImages src={grandma} />, <GetWord word={arrWordFamily[1]} />, <StockWords wordId={arrWordFamily[1].props.id} />),
+    createData(<ShowImages src={father} />, <GetWord word={arrWordFamily[2]} />, <StockWords wordId={arrWordFamily[2].props.id} />),
+    createData(<ShowImages src={mother} />, <GetWord word={arrWordFamily[3]} />, <StockWords wordId={arrWordFamily[3].props.id} />),
+    createData(<ShowImages src={brother} />, <GetWord word={arrWordFamily[4]} />,  <StockWords wordId={arrWordFamily[4].props.id} />),
+    createData(<ShowImages src={sister} />, <GetWord word={arrWordFamily[5]} />,  <StockWords wordId={arrWordFamily[5].props.id} />),
+    createData(<ShowImages src={baby} />, <GetWord word={arrWordFamily[6]} />,  <StockWords wordId={arrWordFamily[6].props.id} />),
+    createData(<ShowImages src={twins} />, <GetWord word={arrWordFamily[7]} />,  <StockWords wordId={arrWordFamily[7].props.id} />),
     createData('', ' ', ''),
 ];
 

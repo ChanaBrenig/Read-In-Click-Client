@@ -29,13 +29,13 @@ export function StockWords(props) {
         if (wordId == otId)
     
             return (
-                alert('Goood!!!!!!') 
+                alert('מצוין!! כל הכבוד!!!! ') 
                 //  vOrX("good")
     
             )
         else
             return (
-                alert("Try Again") 
+                alert("נסה שנית") 
                 // vOrX("Try Again")
     
             )

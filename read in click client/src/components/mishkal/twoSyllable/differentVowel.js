@@ -1,16 +1,21 @@
 import ShoWord from '../shoWord'
 import React, { useState, useEffect } from 'react';
 
+
+
+
 const DifferentVowel = () => {
 
-    const [nikud, setNikud] = useState('')
+    const [nikud, setNikud] = useState('');
+    const [wordList, setWordList] = useState([]);
+    const [flag, setFlag] = useState(false);
+    const url = `http://localhost:3001/getWords/${nikud}`;
     useEffect(() => {
-
-        fetch('localhost3001/word/get' + nikud)
-            .then(response => response.json())
-            .then(data => <ShoWord data={data} />)
-            .catch(error => { console.error(error) })
-    }, [nikud] )
+        fetch(url)
+            .then(res => res.json())
+            .then(data => { setWordList(data); setFlag(true) })
+            .catch(err => console.log(err))
+    }, [nikud]);
  
     return (
         <div>
@@ -18,6 +23,8 @@ const DifferentVowel = () => {
             <button onClick={() => setNikud('chani')}>chani</button>
             <button onClick={() => setNikud('ola')}>ola</button>
             <button onClick={() => setNikud('tzura')}>tzura</button>
+                    {flag ? <ShoWord wordList={wordList} /> : <div></div>}
+
         </div>
     )
 }
