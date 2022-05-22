@@ -11,53 +11,6 @@ import {
 import Card from "./card";
 import "./game.scss";
 
-// const uniqueCardsArray = [
-//   {
-//     type: "1",
-//     image: require(`./images/1.jpg`)
-//   },
-//   {
-//     type: "2",
-//     image: require(`./images/2.jpg`)
-//   },
-//   {
-//     type: "3",
-//     image: require(`./images/3.jpg`)
-//   },
-//   {
-//     type: "4",
-//     image: require(`./images/4.jpg`)
-//   },
-//   {
-//     type: "5",
-//     image: require(`./images/5.jpg`)
-//   },
-//   {
-//     type: "6",
-//     image: require(`./images/6.jpg`)
-//   }
-// ];
-
-// const uniqueWordsCardsArray = [
-//   {
-//     type: "1",
-//     image: require(`./images/7.JPG`)  },
-//   {
-//     type: "2",
-//     image: require(`./images/8.JPG`)  },
-//   {
-//     type: "3",
-//     image: require(`./images/9.JPG`)  },
-//   {
-//     type: "4",
-//     image: require(`./images/10.JPG`)  },
-//   {
-//     type: "5",
-//     image: require(`./images/11.JPG`)  },
-//   {
-//     type: "6",
-//     image: require(`./images/12.JPG`)  }
-// ];
 
 function shuffleCards(array) {
   const length = array.length;
@@ -71,8 +24,9 @@ function shuffleCards(array) {
   return array;
 }
 export default function Game(props ) {
-  const  uniqueCardsArray = props.arr;
-  const uniqueWordsCardsArray = props.arr;
+  const  uniqueCardsArray = props.pictures;
+  const uniqueWordsCardsArray = props.words;
+ 
  
   const [cards, setCards] = useState(() =>
     shuffleCards(uniqueCardsArray.concat(uniqueWordsCardsArray))
@@ -114,7 +68,7 @@ export default function Game(props ) {
     // This is to flip the cards back after 500ms duration
     timeout.current = setTimeout(() => {
       setOpenCards([]);
-    }, 500);
+    }, 4000);
   };
   const handleCardClick = (index) => {
     if (openCards.length === 1) {
@@ -185,17 +139,17 @@ export default function Game(props ) {
       <footer>
         <div className="score">
           <div className="moves">
-            <span className="bold">Moves:</span> {moves}
+            <span className="bold">מהלכים:</span> {moves}
           </div>
           {localStorage.getItem("bestScore") && (
             <div className="high-score">
-              <span className="bold">Best Score:</span> {bestScore}
+              <span className="bold">הניקוד הטוב ביותר:</span> {bestScore}
             </div>
           )}
         </div>
         <div className="restart">
           <Button onClick={handleRestart} color="primary" variant="contained">
-            Restart
+          אתחול
           </Button>
         </div>
       </footer>
@@ -207,17 +161,16 @@ export default function Game(props ) {
         aria-describedby="alert-dialog-description"
       >
         <DialogTitle id="alert-dialog-title">
-          Hurray!!! You completed the challenge
-        </DialogTitle>
+כל הכבוד!!!        </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            You completed the game in {moves} moves. Your best score is{" "}
-            {bestScore} moves.
+            השלמת את המשחק תוך {moves} מהלכים. הניקוד הטוב ביותר שלך הוא{" "}
+            {bestScore} מהלכים.
           </DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleRestart} color="primary">
-            Restart
+            אתחול
           </Button>
         </DialogActions>
       </Dialog>

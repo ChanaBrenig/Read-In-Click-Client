@@ -25,32 +25,175 @@ import ChooseGame from './memoryGame/chooseGame';
 import Emotions from './Emotions/emotions';
 import ShoWord from './mishkal/twoSyllable/ShoWord';
 
+//  import Awords from './memoryGame/array.js';
+//  import Apictures from './memoryGame/array.js';
+//  import Bwords from './memoryGame/array.js';
+//  import Bpictures from './memoryGame/array.js';
+//  import Cwords from './memoryGame/array.js';
+//  import Cpictures from './memoryGame/array.js';
 
-const A = [
-      {
-    type: "1",
-    image: require(`./memoryGame/images/1.jpg`)
-  },
-  {
-    type: "2",
-    image: require(`./memoryGame/images/2.jpg`)
-  },
-  {
-    type: "3",
-    image: require(`./memoryGame/images/3.jpg`)
-  },
-  {
-    type: "4",
-    image: require(`./memoryGame/images/4.jpg`)
-  },
-  {
-    type: "5",
-    image: require(`./memoryGame/images/5.jpg`)
-  },
-  {
-    type: "6",
-    image: require(`./memoryGame/images/6.jpg`)
-  }
+
+const Awords = [
+    {
+  type: "1",
+  image: require(`./memoryGame/imagesA/1.JPG`)
+},
+{
+  type: "2",
+  image: require(`./memoryGame/imagesA/2.JPG`)
+},
+{
+  type: "3",
+  image: require(`./memoryGame/imagesA/3.JPG`)
+},
+{
+  type: "4",
+  image: require(`./memoryGame/imagesA/4.JPG`)
+},
+{
+  type: "5",
+  image: require(`./memoryGame/imagesA/5.JPG`)
+},
+{
+  type: "6",
+  image: require(`./memoryGame/imagesA/6.JPG`)
+}
+]
+
+const Apictures = [
+    {
+  type: "1",
+  image: require(`./memoryGame/imagesA/11.jpg`)
+},
+{
+  type: "2",
+  image: require(`./memoryGame/imagesA/22.jpg`)
+},
+{
+  type: "3",
+  image: require(`./memoryGame/imagesA/33.jpg`)
+},
+{
+  type: "4",
+  image: require(`./memoryGame/imagesA/44.jpg`)
+},
+{
+  type: "5",
+  image: require(`./memoryGame/imagesA/55.jpg`)
+},
+{
+  type: "6",
+  image: require(`./memoryGame/imagesA/66.jpg`)
+}
+]
+
+const Bwords = [
+    {
+  type: "1",
+  image: require(`./memoryGame/imagesB/1.JPG`)
+},
+{
+  type: "2",
+  image: require(`./memoryGame/imagesB/2.JPG`)
+},
+{
+  type: "3",
+  image: require(`./memoryGame/imagesB/3.JPG`)
+},
+{
+  type: "4",
+  image: require(`./memoryGame/imagesB/4.JPG`)
+},
+{
+  type: "5",
+  image: require(`./memoryGame/imagesB/5.JPG`)
+},
+{
+  type: "6",
+  image: require(`./memoryGame/imagesB/6.JPG`)
+}
+]
+
+const Bpictures = [
+    {
+  type: "1",
+  image: require(`./memoryGame/imagesB/11.jpg`)
+},
+{
+  type: "2",
+  image: require(`./memoryGame/imagesB/22.jpg`)
+},
+{
+  type: "3",
+  image: require(`./memoryGame/imagesB/33.jpg`)
+},
+{
+  type: "4",
+  image: require(`./memoryGame/imagesB/44.jpg`)
+},
+{
+  type: "5",
+  image: require(`./memoryGame/imagesB/55.jpg`)
+},
+{
+  type: "6",
+  image: require(`./memoryGame/imagesB/66.jpg`)
+}
+]
+
+
+const Cwords = [
+    {
+  type: "1",
+  image: require(`./memoryGame/imagesC/1.JPG`)
+},
+{
+  type: "2",
+  image: require(`./memoryGame/imagesC/2.JPG`)
+},
+{
+  type: "3",
+  image: require(`./memoryGame/imagesC/3.JPG`)
+},
+{
+  type: "4",
+  image: require(`./memoryGame/imagesC/4.JPG`)
+},
+{
+  type: "5",
+  image: require(`./memoryGame/imagesC/5.JPG`)
+},
+{
+  type: "6",
+  image: require(`./memoryGame/imagesC/6.JPG`)
+}
+]
+
+const Cpictures = [
+    {
+  type: "1",
+  image: require(`./memoryGame/imagesC/11.jpg`)
+},
+{
+  type: "2",
+  image: require(`./memoryGame/imagesC/22.jpg`)
+},
+{
+  type: "3",
+  image: require(`./memoryGame/imagesC/33.jpg`)
+},
+{
+  type: "4",
+  image: require(`./memoryGame/imagesC/44.jpg`)
+},
+{
+  type: "5",
+  image: require(`./memoryGame/imagesC/55.jpg`)
+},
+{
+  type: "6",
+  image: require(`./memoryGame/imagesC/66.jpg`)
+}
 ]
 function Routing() {
     return (
@@ -64,13 +207,13 @@ function Routing() {
                         <ChooseGame />
                     </Route>
                     <Route path="/GameA">
-                        <Game arr={A}/>
+                        <Game words={Awords} pictures={Apictures}/>
                     </Route>
                     <Route path="/GameB">
-                        <Game arr={A}/>
+                        <Game words={Bwords} pictures={Bpictures}/>
                     </Route>
                     <Route path="/GameC">
-                        <Game arr={A}/>
+                        <Game words={Cwords} pictures={Cpictures}/>
                     </Route>
                     <Route path="/SameVowel">
                         <SameVowel />
