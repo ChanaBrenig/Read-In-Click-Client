@@ -8,7 +8,7 @@
     /* text-align:center; */
     /* position:absolute */
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
 }
     .btn{
     padding: 5px;
@@ -32,11 +32,13 @@
     /* align-items: center; */
     text-align: center;
     /* display: flex; */
-    margin-top: 100px;
-    margin-bottom: 40px;
+    /* margin-top: 100px; */
+    /* margin-bottom: 40px; */
     /* margin-right: 150px; */
     /* margin-left: 80px; /* display:flex; */
-    color: rgb(16, 16, 148);
+    /* color: rgb(16, 16, 148); */
+    color:rgb(247, 14, 103);
+
     /* font-family: 'Times New Roman', Times, serif; */
     font-size: 400%;
     font-family: math;
@@ -44,8 +46,38 @@
 }
 .myTitleH2{
     text-align: center;
-    color:rgb(46, 151, 216);
+    color:rgb(247, 14, 103);
+    /* color:rgb(46, 151, 216); */
     font-family: 'Times New Roman', Times, serif;
     font-size: 300%;
 
 }
+ .generalMishkat{
+    background-image: url("./images/words.jpg");
+    background-repeat: no-repeat;
+background-size: cover;
+
+    /* width: 1000px;
+    height: 1000px; */
+    /* direction: rtl; */
+    /* background-image: url(http://localhost:64683/img/7.png); */
+     /* background-position: center;
+     /* background-repeat:inherit; */
+} 
+
+/* body{
+    background-image: url("./images/‏‏pitriya.jpg");
+    /* width: 1000px;
+    height: 1000px; */
+    /* direction: rtl; */
+    /* background-image: url(http://localhost:64683/img/7.png); */
+     /* background-position: center;
+     background-repeat:inherit;
+     direction: rtl;
+     
+      background-position: center;
+      background-repeat:inherit; */ 
+
+/* } */
+
+
