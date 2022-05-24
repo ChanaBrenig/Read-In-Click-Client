@@ -59,6 +59,8 @@ const rows = [
     createData(<ShowImages src={baby} />, <GetWord word={arrWordFamily[6]} />,  <StockWords wordId={arrWordFamily[6].props.id} />),
     createData(<ShowImages src={twins} />, <GetWord word={arrWordFamily[7]} />,  <StockWords wordId={arrWordFamily[7].props.id} />),
     createData('', ' ', ''),
+    createData(    <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
+    ),
 ];
 
 // 'סָבְתָא', 'אַבָּא', 'אִמָּא', 'אָח', 'אָחוֹת', 'תִּינוֹק', 'תְּאוֹמִים'

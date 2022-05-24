@@ -12,10 +12,10 @@ const TwoSyllable = () => {
     let history = useHistory();
 
     const sameVowl = () => {
-        history.push('/DifferentVowl')
+        history.push('/differentVowl')
     }
     const differentVowl = () => {
-        history.push('/SameVowl')
+        history.push('/sameVowl')
     }
   
     return (
@@ -24,6 +24,8 @@ const TwoSyllable = () => {
             <div className="btns">
                 <button className="btn" onClick={sameVowl}>הברות דומות</button>
                 <button className="btn" onClick={differentVowl}>הברות שונות  </button>
+                <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
+
             </div>
         </div>)
 }

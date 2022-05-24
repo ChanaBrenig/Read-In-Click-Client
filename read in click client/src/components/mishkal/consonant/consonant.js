@@ -23,6 +23,7 @@ const Consonant = () => {
             {/* <button onClick={() => setNikud('machsev')}>machsev</button> */}
             {/* <button onClick={() => setNikud('machsev')}>machsev</button> */}
             <button className="btnOneSyllable" onClick={() => setNikud('consonant')}>למעבר למילים =></button>
+            <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
 
             {/* <button onClick={() => setNikud('segol')}>segol</button>
             <button onClick={() => setNikud('shuruk')}>shuruk</button>

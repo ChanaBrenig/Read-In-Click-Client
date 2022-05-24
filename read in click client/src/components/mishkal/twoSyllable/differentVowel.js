@@ -23,6 +23,8 @@ const DifferentVowel = () => {
             <button onClick={() => setNikud('chani')}>chani</button>
             <button onClick={() => setNikud('ola')}>ola</button>
             <button onClick={() => setNikud('tzura')}>tzura</button>
+            <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
+
                     {flag ? <ShoWord wordList={wordList} /> : <div></div>}
 
         </div>

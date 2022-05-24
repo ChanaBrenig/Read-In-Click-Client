@@ -20,6 +20,8 @@ const SameVowel = () => {
              <button className="btnOneSyllable" onClick={() => setNikud('segolsegol')}>צירה\ סגול</button>
              <button className="btnOneSyllable" onClick={() => setNikud('cholamcholam')}>חולם חולם</button>
              <button className="btnOneSyllable" onClick={() => setNikud('shurukshuruk')}>שורוק\ קובוץ</button>
+             <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
+
             { /* <button onClick={() => setNikud('kamatzkamatz')}>kamatzkamatz</button>
             <button onClick={() => setNikud('chirikchirik')}>chirikchirik</button>
             <button onClick={() => setNikud('cholamcholam')}>cholamcholam</button> */
