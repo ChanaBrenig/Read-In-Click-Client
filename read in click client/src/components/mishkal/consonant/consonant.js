@@ -14,7 +14,7 @@ const Consonant = () => {
             .catch(err => console.log(err))
     }, [nikud]);
 
-      
+
 
     return (
         <div>
@@ -29,7 +29,7 @@ const Consonant = () => {
             <button onClick={() => setNikud('shuruk')}>shuruk</button>
             <button onClick={() => setNikud('shurukcholam')}>shuruk</button>
             <button onClick={() => setNikud('chirikkamatz')}>chirik</button> */}
-        {flag ? <ShoWordLong wordList={wordList} /> : <div></div>}
+            {flag ? <ShoWordLong wordList={wordList} /> : <div></div>}
 
 
         </div>
