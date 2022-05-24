@@ -82,10 +82,8 @@ export default function Emotions() {
   }
   return (<div >
     <div className="d">
-      <div >משחק הרגשות</div>
-      <div > גרור כל אחד מהאימוג'ים הבאים לתיבה המתאימה</div></div>
-    <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
-
+    <div className='t'>משחק הרגשות</div>
+    <div>יש לגרור כל אחד מהאימוג'ים הבאים לתיבה המתאימה</div></div>
     <div className="PicturesList">
     <table ><tr>
       {PictureList.map((picture) => {
