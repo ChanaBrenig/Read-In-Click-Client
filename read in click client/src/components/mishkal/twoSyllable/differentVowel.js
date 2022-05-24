@@ -1,6 +1,7 @@
 import ShoWord from '../shoWord'
 import React, { useState, useEffect } from 'react';
 
+import  '../onesyllable/oneSyllable.css'
 
 
 
@@ -18,11 +19,18 @@ const DifferentVowel = () => {
     }, [nikud]);
  
     return (
-        <div>
-            <button onClick={() => setNikud('gina')}>gina</button>
+        <div className="generalOneSyllable">
+             <button className="btnOneSyllable" onClick={() => setNikud('kubutzkamatz')}>קובוץ קמץ</button>
+             <button className="btnOneSyllable" onClick={() => setNikud('kamatzcholam')}>קמץ חולם</button>
+             <button className="btnOneSyllable" onClick={() => setNikud('chiriksegol')}>חיריק צירה\ סגול</button>
+        
+             <button className="btnOneSyllable" onClick={() => setNikud('cholamshuruk')}>חולם שורוק</button>
+             {/* <button className="btnOneSyllable" onClick={() => setNikud('meorav')}>מעורב- תירגול כללי 2 הברות </button> */}
+
+            {/* <button onClick={() => setNikud('gina')}>gina</button>
             <button onClick={() => setNikud('chani')}>chani</button>
             <button onClick={() => setNikud('ola')}>ola</button>
-            <button onClick={() => setNikud('tzura')}>tzura</button>
+            <button onClick={() => setNikud('tzura')}>tzura</button> */}
             <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
 
                     {flag ? <ShoWord wordList={wordList} /> : <div></div>}

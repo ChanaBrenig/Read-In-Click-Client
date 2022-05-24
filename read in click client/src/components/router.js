@@ -12,6 +12,7 @@ import TwoSyllable from './mishkal/twoSyllable/twoSyllable';
 import Consonant from './mishkal/consonant/consonant';
 import SameVowel from './mishkal/twoSyllable/sameVowel';
 import DifferentVowel from './mishkal/twoSyllable/differentVowel';
+import Meorav from './mishkal/twoSyllable/meorav';
 import Choose from './choose'
 import SignUp from './login/signUp';
 import SignIn from './login/signIn';
@@ -215,10 +216,13 @@ function Routing() {
                     <Route path="/GameC">
                         <Game words={Cwords} pictures={Cpictures}/>
                     </Route>
-                    <Route path="/SameVowel">
+                    <Route path="/meorav">
+                        <Meorav />
+                    </Route>
+                    <Route path="/sameVowel">
                         <SameVowel />
                     </Route>
-                    <Route path="/DifferentVowel">
+                    <Route path="/differentVowel">
                         <DifferentVowel />
                     </Route>
                     {/* <Route path="/SameVowel">

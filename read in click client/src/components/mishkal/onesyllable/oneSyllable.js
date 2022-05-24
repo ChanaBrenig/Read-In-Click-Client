@@ -17,7 +17,7 @@ const OneSyllable = () => {
 
 
     return (
-        <div className="generalOneSyllable">
+        <div className="">
             <button className="btnOneSyllable" onClick={() => setNikud('kamatz')}>קמץ</button>
             <button className="btnOneSyllable" onClick={() => setNikud('chirik')}>חיריק</button>
             <button className="btnOneSyllable" onClick={() => setNikud('cholam')}>חולם</button>
