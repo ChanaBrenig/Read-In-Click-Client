@@ -21,6 +21,7 @@ const SameVowel = () => {
              <td><button className="btnOneSyllable" onClick={() => setNikud('segolsegol')}>צירה\ סגול</button></td>
              <td><button className="btnOneSyllable" onClick={() => setNikud('cholamcholam')}>חולם חולם</button></td>
              <td> <button className="btnOneSyllable" onClick={() => setNikud('shurukshuruk')}>שורוק\ קובוץ</button></td>
+             
              </tr></table>
              <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
 
