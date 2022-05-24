@@ -23,6 +23,8 @@ const Mishkal = () => {
                 <button className="btn" onClick={oneSyllable}>הברה אחת</button>
                 <button className="btn" onClick={twoSyllable}>שתי הברות </button>
                 <button className="btn" onClick={consonant}>שלוש הברות ומעלה </button>
+                <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
+
             </div>
         </div>)
 }

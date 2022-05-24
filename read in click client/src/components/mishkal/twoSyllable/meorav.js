@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ShoWordLong from '../shoWordLong'
 
 
-const Consonant = () => {
+const Meorav = () => {
     const [nikud, setNikud] = useState('');
     const [wordList, setWordList] = useState([]);
     const [flag, setFlag] = useState(false);
@@ -22,7 +22,7 @@ const Consonant = () => {
             {/* <button onClick={() => setNikud('targil')}>targil</button> */}
             {/* <button onClick={() => setNikud('machsev')}>machsev</button> */}
             {/* <button onClick={() => setNikud('machsev')}>machsev</button> */}
-            <button className="btnOneSyllable" onClick={() => setNikud('consonant')}>למעבר למילים =></button>
+            <button className="btnOneSyllable" onClick={() => setNikud('meorav')}>למעבר למילים =></button>
             <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
 
             {/* <button onClick={() => setNikud('segol')}>segol</button>
@@ -35,4 +35,4 @@ const Consonant = () => {
         </div>
     )
 }
-export default Consonant;
+export default Meorav;

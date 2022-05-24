@@ -144,6 +144,8 @@ export default function Game(props ) {
           {localStorage.getItem("bestScore") && (
             <div className="high-score">
               <span className="bold">הניקוד הטוב ביותר:</span> {bestScore}
+              <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
+
             </div>
           )}
         </div>

@@ -15,8 +15,8 @@ const ChooseGame = () => {
     function goToGameC() {
         history.push('/GameC')
     }
-   
-  
+
+
     //Downloads
     return (
         <div className="generalDiv">
@@ -24,7 +24,8 @@ const ChooseGame = () => {
                 <button className="btn" onClick={goToGameA}>פתח קמץ</button>
                 <button className="btn" onClick={goToGameB}>צירה וסגול</button>
                 <button className="btn" onClick={goToGameC}>חיריק וחולם</button>
-        
+                <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
+
 
                 {/* <button className="btn">Button 6</button> */}
             </div>
