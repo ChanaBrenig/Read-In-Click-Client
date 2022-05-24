@@ -21,6 +21,9 @@ import Holiday from './Holiday/holiday'
 import CheckboxLabels from './Holiday/specificHoliday'
 import Shabbat from './Shabbat/shabbat'
 import Downloads from './Downloads/downloads'
+import Status from './Status/status'
+import SetStatus from './Status/setStatus'
+import GetStatus from './Status/getStatus'
 import Game from './memoryGame/game';
 import ChooseGame from './memoryGame/chooseGame';
 import Emotions from './Emotions/emotions';
@@ -201,6 +204,15 @@ function Routing() {
         <div>
             <Router>
                 <Switch>
+                <Route path="/getStatus">
+                        <GetStatus />
+                    </Route>
+                    <Route path="/setStatus">
+                        <SetStatus />
+                    </Route>
+                <Route path="/status">
+                        <Status />
+                    </Route>
                 <Route path="/emotions">
                         <Emotions />
                     </Route>

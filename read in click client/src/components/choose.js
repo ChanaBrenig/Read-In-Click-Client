@@ -27,6 +27,9 @@ const Choose = () => {
     function goToEmotions() {
         history.push('/emotions')
     }
+     function goToStatus() {
+        history.push('/status')
+    }
     // import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 
     //Downloads
@@ -40,6 +43,7 @@ const Choose = () => {
                 <button className="btn" onClick={goToDownloads}>הדפסות</button>
                 <button className="btn" onClick={goToMemoryGame}>משחק הזיכרון</button>
                 <button className="btn" onClick={goToEmotions}>רגשות</button>
+                <button className="btn" onClick={goToStatus}>סטטוס המשתמש</button>
             </div>
         </div>
     )
