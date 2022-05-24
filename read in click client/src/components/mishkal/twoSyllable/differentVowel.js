@@ -20,11 +20,12 @@ const DifferentVowel = () => {
  
     return (
         <div className="generalOneSyllable">
-             <button className="btnOneSyllable" onClick={() => setNikud('kubutzkamatz')}>קובוץ קמץ</button>
-             <button className="btnOneSyllable" onClick={() => setNikud('kamatzcholam')}>קמץ חולם</button>
-             <button className="btnOneSyllable" onClick={() => setNikud('chiriksegol')}>חיריק צירה\ סגול</button>
-        
-             <button className="btnOneSyllable" onClick={() => setNikud('cholamshuruk')}>חולם שורוק</button>
+            <table><tr>
+             <td><button className="btnOneSyllable" onClick={() => setNikud('kubutzkamatz')}>קובוץ קמץ</button></td>
+             <td><button className="btnOneSyllable" onClick={() => setNikud('kamatzcholam')}>קמץ חולם</button></td>
+             <td><button className="btnOneSyllable" onClick={() => setNikud('chiriksegol')}>חיריק צירה\ סגול</button></td>        
+             <td><button className="btnOneSyllable" onClick={() => setNikud('cholamshuruk')}>חולם שורוק</button></td>
+             </tr></table>
              {/* <button className="btnOneSyllable" onClick={() => setNikud('meorav')}>מעורב- תירגול כללי 2 הברות </button> */}
 
             {/* <button onClick={() => setNikud('gina')}>gina</button>

@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-const SetStatus=()=>{
+const SetStatus = () => {
 
 
-    return(
+    return (
         <div>setStatus</div>)
 }
 export default SetStatus
