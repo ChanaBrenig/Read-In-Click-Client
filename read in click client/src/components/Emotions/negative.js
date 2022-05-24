@@ -83,7 +83,7 @@ export default function Negative(props) {
     }
     return (<div>
 
-        <div style={{ textAlign: "center" }}>רגשות שליליים</div>
+        <div className='td'>רְגָשׁוֹת שְׁלִילִיִּים</div>
         <div
             className="Board"
             ref={drop}

@@ -109,7 +109,7 @@ export default function Game(props ) {
     setMoves(0);
     setShouldDisableAllCards(false);
     // set a shuffled deck of cards
-    setCards(shuffleCards(uniqueCardsArray.concat(uniqueCardsArray)));
+    setCards(shuffleCards(uniqueCardsArray.concat(uniqueWordsCardsArray)));
   };
 
   return (

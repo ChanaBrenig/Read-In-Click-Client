@@ -9,57 +9,57 @@ const PictureList = [
 
   {
     img: require(`./images/3.JPG`),
-    title: 'Sink',
+    title: 'צוֹחֵק',
     id: "2",
 
   },
   {
     img: require(`./images/4.JPG`),
-    title: 'Kitchen',
+    title: 'חוֹשֵׁשׁ',
     id: "-1",
 
   },
   {
     img: require(`./images/5.JPG`),
-    title: 'Blinds',
+    title: 'מִתְבַּדֵּחַ',
     id: "3",
 
   },
   {
     img: require(`./images/6.JPG`),
-    title: 'Chairs',
+    title: 'מְאֻשָּׁר',
     id: "4",
   },
   {
     img: require(`./images/7.JPG`),
-    title: 'Laptop',
+    title: 'עָצוּב',
     id: "-2",
   },
   {
     img: require(`./images/8.JPG`),
-    title: 'Doors',
+    title: 'שָׂמֵחַ',
     id: "5",
   },
   {
     img: require(`./images/9.JPG`),
-    title: 'Coffee',
+    title: 'בּוֹכֶה',
     id: "-3",
   },
   {
     img: require(`./images/10.JPG`),
-    title: 'Storage',
+    title: 'כּוֹעֵס',
     id: "-4",
 
   },
   {
     img: require(`./images/11.JPG`),
-    title: 'Candle',
+    title: 'מִתְלַבֵּט',
     id: "-5",
 
   },
   {
     img: require(`./images/1.JPG`),
-    title: 'Coffee table',
+    title: 'מַבְּסוּט',
     id: "1",
 
   },
@@ -87,12 +87,16 @@ export default function Emotions() {
     <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
 
     <div className="PicturesList">
+    <table ><tr>
       {PictureList.map((picture) => {
-        return <Picture url={picture.img} id={picture.id} title={picture.title} />
-      })}</div>
-
+        return (<td><Picture url={picture.img} id={picture.id} title={picture.title} /></td>)
+      })}
+      </tr>
+      <tr>{PictureList.map((p)=>{return (<td className='td'>{p.title}</td>)})}</tr>
+</table></div>
+   
     <br /><br />
-    <div style={{ textAlign: "center" }}>רגשות חיוביים</div>
+    <div className='td'>רְגָשׁוֹת חִיּוּבִיִּים</div>
     <div
       className="Board"
       ref={drop}

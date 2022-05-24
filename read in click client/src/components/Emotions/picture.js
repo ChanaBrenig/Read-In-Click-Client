@@ -1,5 +1,6 @@
 import React from "react";
 import { useDrag } from 'react-dnd';
+
 function Picture(props) {
     const [{ isDragging }, drag] = useDrag(() => ({
         type: "image",
@@ -15,7 +16,7 @@ function Picture(props) {
         src={props.url} 
         width="150 px"
         style={{opacity: isDragging ? "0.5" : "1.0"}} />
-       {/* <label >{props.title}</label> */}
+        
         </>
        )
 }
