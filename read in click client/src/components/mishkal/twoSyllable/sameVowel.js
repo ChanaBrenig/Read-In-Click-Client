@@ -15,11 +15,13 @@ const SameVowel = () => {
     
     return (
         <div>
-              <button className="btnOneSyllable" onClick={() => setNikud('kamatzkamatz')}>קמץ\ פתח</button>
-             <button className="btnOneSyllable" onClick={() => setNikud('chirikchirik')}>חיריק חיריק</button>
-             <button className="btnOneSyllable" onClick={() => setNikud('segolsegol')}>צירה\ סגול</button>
-             <button className="btnOneSyllable" onClick={() => setNikud('cholamcholam')}>חולם חולם</button>
-             <button className="btnOneSyllable" onClick={() => setNikud('shurukshuruk')}>שורוק\ קובוץ</button>
+            <table><tr>
+             <td> <button className="btnOneSyllable" onClick={() => setNikud('kamatzkamatz')}>קמץ\ פתח</button></td>
+             <td><button className="btnOneSyllable" onClick={() => setNikud('chirikchirik')}>חיריק חיריק</button></td>
+             <td><button className="btnOneSyllable" onClick={() => setNikud('segolsegol')}>צירה\ סגול</button></td>
+             <td><button className="btnOneSyllable" onClick={() => setNikud('cholamcholam')}>חולם חולם</button></td>
+             <td> <button className="btnOneSyllable" onClick={() => setNikud('shurukshuruk')}>שורוק\ קובוץ</button></td>
+             </tr></table>
              <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
 
             { /* <button onClick={() => setNikud('kamatzkamatz')}>kamatzkamatz</button>
