@@ -11,6 +11,7 @@ function SignUp() {
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [userId, setUserId] = useState('')
+    const [password, setPassword] = useState('')
     const [status, setStatus] = useState('')
     const history = useHistory();
 
@@ -27,18 +28,21 @@ function SignUp() {
 
     return (
         <div className="generalDivSignUp">
-            <br /><br /><br /><br /><br />
-            <div className="lableLogin">הכנס שם פרטי</div>
+            <br /><br /><br />
+            <div className="lableLogin"> שם פרטי</div>
             <TextField color="secondary" onChange={(e) => { setFirstName(e.target.value) }} focused />
             <br /> <br />
-            <div className="lableLogin">הכנס שם משפחה</div>
+            <div className="lableLogin"> שם משפחה</div>
             <TextField color="secondary" onChange={(e) => { setLastName(e.target.value) }} focused />
             <br /> <br />
-            <div className="lableLogin">הכנס מספר זהות</div>
+            <div className="lableLogin"> מספר זהות</div>
             <TextField color="secondary" onChange={(e) => { setUserId(e.target.value) }} focused />
+            <br /><br />
+            <div className="lableLogin"> סיסמא</div>
+            <TextField color="secondary" onChange={(e) => { setPassword(e.target.value) }} focused />
             <br /><br /><br />
             <Button variant="contained" color="secondary" onClick={api}> לשמירת הנתונים</Button>
-            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br />
         </div>)
 }
 

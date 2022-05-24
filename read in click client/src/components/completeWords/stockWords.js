@@ -2,11 +2,16 @@ import React, { useState, useEffect } from 'react';
 import './family.css'
 import './stockWords.css'
 import { Button } from '@material-ui/core';
+import animation from './images/animation.gif'
+// import { useAlert } from 'react-alert'
+
 
 export function StockWords(props) {
     // function colorFunc() {
     //     alert('hello')
     // }
+    // const alert = useAlert()
+
     return (
         <div >
             <div className="myCenter">
@@ -29,8 +34,11 @@ export function StockWords(props) {
         if (wordId == otId)
     
             return (
-                alert('מצוין!! כל הכבוד!!!! ') 
+                alert('מצוין!! כל הכבוד!!!!  ') 
                 //  vOrX("good")
+                // <img src="animation">ggggggggggggggggg</img>
+                // <img src={animation}></img>
+
     
             )
         else

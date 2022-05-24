@@ -59,6 +59,7 @@ export default function Shabbat() {
         <TableContainer component={Paper} className="tableShabbat">
             <Table sx={{ minWidth: 650 }} aria-label="caption table" className="tableShabbat">
                 <caption>שבת שלום!!!</caption>
+                <caption> <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a></caption>
                 <TableHead>
                     <TableRow>
                         <TableCell></TableCell>

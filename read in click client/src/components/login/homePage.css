@@ -3,8 +3,18 @@
 }
 .title{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 150px;
-    text-align: center
+    font-size: 100px;
+    text-align: center;
+    color: rgb(151, 22, 108);
+    
+}
+.subTitle{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    text-align: center;
+    /* color: rgb(173, 37, 128) */
+    color: rgb(151, 22, 108);
+
 }
 .bt{
     font-size:30px;

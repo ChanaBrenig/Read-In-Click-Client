@@ -23,6 +23,7 @@ const OneSyllable = () => {
             <button className="btnOneSyllable" onClick={() => setNikud('cholam')}>חולם</button>
             <button className="btnOneSyllable" onClick={() => setNikud('segol')}>סגול</button>
             <button className="btnOneSyllable" onClick={() => setNikud('shuruk')}>שורוק</button>
+            <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
 
             {flag ? <ShoWord wordList={wordList} /> : <div></div>}
 

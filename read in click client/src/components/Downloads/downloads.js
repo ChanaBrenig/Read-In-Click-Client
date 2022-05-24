@@ -42,6 +42,8 @@ const Downloads = () => {
             <br />
             <br />
             <a href="https://magic-painter.netlify.app/">למעבר לצייר הקש כאן</a>
+            <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
+
             <br/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             {/* <button onClick={ReactPainter}></button> */}
             {/* <ReactPainter/> */}

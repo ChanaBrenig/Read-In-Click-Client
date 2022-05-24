@@ -17,7 +17,10 @@
     /* padding: 50px; */
     border: 3px solid black;
 }
-
+.ahref{
+    position: fixed‏;
+    margin-top: 5px;
+}
  /* .generalOneSyllable{
     display:flex;
     justify-content:space-around;  
