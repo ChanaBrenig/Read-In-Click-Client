@@ -12,10 +12,10 @@ function SignUp() {
     const [lastName, setLastName] = useState('')
     const [userId, setUserId] = useState('')
     const [password, setPassword] = useState('')
-    const [status, setStatus] = useState('')
+    const [status, setStatus] = useState(0)
     const history = useHistory();
 
-   const api = () => {
+    const api = () => {
         signUpApi({ user })
             .then(() => {
                 history.push('/choose')
@@ -24,7 +24,7 @@ function SignUp() {
                 console.log('--error--');
             })
     }
-    let user = { firstName, lastName, userId }
+    let user = { firstName, lastName, userId, password, status }
 
     return (
         <div className="generalDivSignUp">
@@ -39,7 +39,7 @@ function SignUp() {
             <TextField color="secondary" onChange={(e) => { setUserId(e.target.value) }} focused />
             <br /><br />
             <div className="lableLogin"> סיסמא</div>
-            <TextField color="secondary" onChange={(e) => { setPassword(e.target.value) }} focused />
+            <TextField color="secondary" onChange={(e) => { setPassword(e.target.value); setStatus(0) }} focused />
             <br /><br /><br />
             <Button variant="contained" color="secondary" onClick={api}> לשמירת הנתונים</Button>
             <br /><br /><br /><br /><br />
