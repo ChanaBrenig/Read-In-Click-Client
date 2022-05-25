@@ -16,13 +16,26 @@ function SignUp() {
     const history = useHistory();
 
     const api = () => {
+     if(userId.length==9&&password.length>=6){
         signUpApi({ user })
-            .then(() => {
-                history.push('/choose')
-            })
-            .catch(() => {
-                console.log('--error--');
-            })
+        .then(() => {
+            alert("המשתמש נוסף בהצלחה");
+            history.push('/choose')
+        })
+        .catch(() => {
+            console.log('--error--');
+        })
+     }
+        else{
+            if(userId.length!=9 ){
+                alert("תעודת זהות חייבת להכיל 9 ספרות")
+                setUserId('')
+              }
+                if(password.length<6){
+                alert("סיסמא חייבת להכיל לפחות 6 תווים") 
+                setPassword('')
+              }
+            }   
     }
     let user = { firstName, lastName, userId, password, status }
 
@@ -37,7 +50,7 @@ function SignUp() {
             <div className="lableLogin"> שם משפחה</div>
             <TextField color="secondary" onChange={(e) => { setLastName(e.target.value) }} focused />
             <br /> <br />
-            <div className="lableLogin"> מספר זהות</div>
+            <div className="lableLogin"> תעודת זהות</div>
             <TextField color="secondary" onChange={(e) => { setUserId(e.target.value) }} focused />
             <br /><br />
             <div className="lableLogin"> סיסמא</div>

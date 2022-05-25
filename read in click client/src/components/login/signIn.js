@@ -6,41 +6,43 @@ import './homePage.css'
 import TextField from '@mui/material/TextField';
 import Button from '@material-ui/core/Button';
 
-
+import { textAlign } from '@mui/system';
 function SignIn() {
+  
 
   const [id, setId] = useState('')
   const [password, setPassword] = useState('')
+  const [b, setButton] = useState(true)
+
+const onClick=()=>{
+  fetch(url)
+      .then(res => res.json())
+      .then(data => {if(data.length>0){
+        history.push('/choose')
+      }
+    else{
+      alert("תעודת זהות או סיסמא שגויים")
+    }})
+      .catch(err => console.log(err))    
+}
   const history = useHistory();
 
-  function api() {
-
-    if(id.length!=9 ){
-      alert("תעודת זהות לא תקינה")
-      setId('')
-    }
-      if(password.length!=6){
-      alert("סיסמא לא תקינה") 
-      setPassword('')
-    }else{ 
-       signInApi(user) .then(() => {
-        debugger
-
-        history.push('/choose')
-      }) .catch(() => {
-        console.log('--error--');
-      })}
+const url = `http://localhost:3001/signInById/${id}/${password}`;
   
+
+  useEffect(() => {
+  if(id.length==9&&password.length>=6){
+    setButton(false)  
   }
-  console.log(id);
-  console.log(password);
-  let user = { id }
+  }, [id,password]);
+  
+  //let user = { id }
   return (
     <div className="generalDivSignUp">
       <br /> <br /><br /><br /><br /><br />
       <div  className="t1" >כניסה באמצעות תעודת זהות וסיסמא</div>
       <br/>
-      <div className="lableLogin"> מספר זהות</div>
+      <div className="lableLogin"> תעודת זהות</div>
       <br />
       <TextField color="secondary" onChange={(e) => { setId(e.target.value) }} focused />
       <br /> <br />
@@ -48,7 +50,9 @@ function SignIn() {
       <br />
       <TextField color="secondary" onChange={(e) => { setPassword(e.target.value) }} focused />
       <br /> <br />
-      <Button variant="contained" color="secondary" onClick={() => { api() }}> לאישור  </Button>
+   
+     
+      <Button variant="contained" color="secondary" disabled={b} onClick={() => { onClick() }}> לאישור  </Button>
       <br /><br /> <br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>)
 }
