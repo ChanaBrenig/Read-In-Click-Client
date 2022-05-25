@@ -58,7 +58,6 @@ export default function SetStatus() {
     const [point, setPoint] = useState(0);
     // const [wordList, setWordList] = useState([]);
     const [flag, setFlag] = useState(false);
-<<<<<<< HEAD
     const [newFlag, setNewFlag] = useState(false);
     // const url = `http://localhost:3001/setPoints`;
     // useEffect(() => {
@@ -70,16 +69,6 @@ export default function SetStatus() {
     // const getStatus = () => {
     //     history.push('/getStatus')
     // }
-=======
-    const url = `http://localhost:3001/setPoints`;
-    useEffect(() => {
-        fetch(url)
-            .then(res => res.json())
-            .then(data => { (alert("")); setFlag(true) ;})
-            .catch(err => console.log(err))
-    }, [point]);
-    console.log(point);
->>>>>>> a5b2ece7650067982a64834d37673625d499701e
     return (
         <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="caption table">
@@ -102,17 +91,11 @@ export default function SetStatus() {
                                 {row.name}
                             </TableCell>
                             <TableCell align="right"></TableCell>
-<<<<<<< HEAD
                             <TableCell align="right"><button onClick={() => setPoint((point ) + 10)}  className="btnSetStatus">10</button></TableCell>
                             <TableCell align="right"><button onClick={() => setPoint(( point ) + 20) } className="btnSetStatus">20</button></TableCell>
                             <TableCell align="right"><button onClick={() => setPoint((point ) + 30)} className="btnSetStatus">30</button></TableCell>
                             {/* <TableCell align="right"><button onClick={() => setFlag((point ) + 30)} className="btnSetStatus">30</button></TableCell> */}
                       
-=======
-                            <TableCell align="right"><button onClick={() => setPoint((point)+ 10)} className="btnSetStatus">10</button></TableCell>
-                            <TableCell align="right"><button onClick={() => setPoint((point)   + 20)} className="btnSetStatus">20</button></TableCell>
-                            <TableCell align="right"><button onClick={() => setPoint((point) + 30)} className="btnSetStatus">30</button></TableCell>
->>>>>>> a5b2ece7650067982a64834d37673625d499701e
                         </TableRow>
                         
                     ))    
