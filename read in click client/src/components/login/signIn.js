@@ -15,15 +15,25 @@ function SignIn() {
 
   function api() {
 
-    signInApi(user) .then(() => {
+    if(id.length!=9 ){
+      alert("תעודת זהות לא תקינה")
+      setId('')
+    }
+      if(password.length!=6){
+      alert("סיסמא לא תקינה") 
+      setPassword('')
+    }else{ 
+       signInApi(user) .then(() => {
         debugger
 
         history.push('/choose')
       }) .catch(() => {
         console.log('--error--');
-      })
-  }
+      })}
   
+  }
+  console.log(id);
+  console.log(password);
   let user = { id }
   return (
     <div className="generalDivSignUp">
