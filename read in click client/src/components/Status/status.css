@@ -57,3 +57,24 @@
 .animation{
     margin-right: 42%;
 }
+
+.btnGetStatus{
+    /* padding: 5px; */
+    background-attachment: fixed;
+    /* background-color: rgb(255, 136, 0); */
+    /* background-image: url("./Holiday/images/purim/reka5.jpg"); */
+    border-radius: 2px,2px,2px,2px;
+    height:80px;
+    width: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+    color:black;
+    border-radius: 50%;
+    flex-wrap: wrap;
+    /* margin: 50px; */
+    /* padding: 50px; */
+    border: 3px solid black;
+    margin-right:30px;
+    background-color: rgb(245, 116, 23);  
+}

@@ -1,13 +1,4 @@
-// import React from 'react'
 
-
-// const SetStatus = () => {
-
-
-//     return (
-//         <div>setStatus</div>)
-// }
-// export default SetStatus
 
 import * as React from 'react';
 import Table from '@mui/material/Table';
@@ -18,6 +9,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { useState, useEffect } from 'react'
+import { useHistory } from "react-router-dom";
+import animation from '../completeWords/images/animation.gif'
 
 
 function createData(name, jj, nikud1, nikud2, nikud3) {
@@ -34,11 +27,50 @@ const rows = [
     //   createData('Eclair', 262, 16.0, 24, 6.0),
 ];
 
+
+
+const GetStatus=(props)=>{
+
+    // const [nikud, setNikud] = useState('');
+    // const [wordList, setWordList] = useState([]);
+    // const [flag, setFlag] = useState(false);
+    // const url = `http://localhost:3001/getPoints`;
+    // useEffect(() => {
+    //     fetch(url)
+    //         .then(res => res.json())
+    //         .then(data => { setFlag(true) })
+    //         .catch(err => console.log(err))
+    // }, []);
+return(
+    <div>
+       <h1 className="titleStatus"> יש לך כבר {props.getPoint} נקודות</h1>
+       <img src={animation} className="animation"></img>
+        </div>)
+}
+
+
+
+
+
 export default function SetStatus() {
+    // let history = useHistory();
 
     const [point, setPoint] = useState(0);
     // const [wordList, setWordList] = useState([]);
     const [flag, setFlag] = useState(false);
+<<<<<<< HEAD
+    const [newFlag, setNewFlag] = useState(false);
+    // const url = `http://localhost:3001/setPoints`;
+    // useEffect(() => {
+    //     fetch(url)
+    //         .then(res => res.json())
+    //         .then(data => { (alert("")); setFlag(true) })
+    //         .catch(err => console.log(err))
+    // }, [point]);
+    // const getStatus = () => {
+    //     history.push('/getStatus')
+    // }
+=======
     const url = `http://localhost:3001/setPoints`;
     useEffect(() => {
         fetch(url)
@@ -47,6 +79,7 @@ export default function SetStatus() {
             .catch(err => console.log(err))
     }, [point]);
     console.log(point);
+>>>>>>> a5b2ece7650067982a64834d37673625d499701e
     return (
         <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="caption table">
@@ -58,6 +91,7 @@ export default function SetStatus() {
                         <TableCell align="right">ניקוד 1</TableCell>
                         <TableCell align="right">ניקוד 2</TableCell>
                         <TableCell align="right">ניקוד 3</TableCell>
+                        {/* <TableCell align="right">לאישור</TableCell> */}
                     </TableRow>
 
                 </TableHead>
@@ -68,16 +102,32 @@ export default function SetStatus() {
                                 {row.name}
                             </TableCell>
                             <TableCell align="right"></TableCell>
+<<<<<<< HEAD
+                            <TableCell align="right"><button onClick={() => setPoint((point ) + 10)}  className="btnSetStatus">10</button></TableCell>
+                            <TableCell align="right"><button onClick={() => setPoint(( point ) + 20) } className="btnSetStatus">20</button></TableCell>
+                            <TableCell align="right"><button onClick={() => setPoint((point ) + 30)} className="btnSetStatus">30</button></TableCell>
+                            {/* <TableCell align="right"><button onClick={() => setFlag((point ) + 30)} className="btnSetStatus">30</button></TableCell> */}
+                      
+=======
                             <TableCell align="right"><button onClick={() => setPoint((point)+ 10)} className="btnSetStatus">10</button></TableCell>
                             <TableCell align="right"><button onClick={() => setPoint((point)   + 20)} className="btnSetStatus">20</button></TableCell>
                             <TableCell align="right"><button onClick={() => setPoint((point) + 30)} className="btnSetStatus">30</button></TableCell>
+>>>>>>> a5b2ece7650067982a64834d37673625d499701e
                         </TableRow>
-                    ))}
+                        
+                    ))    
+                    }
                 </TableBody>
+            <button onClick={()=>setNewFlag(true)} getPoint={point} className="btnGetStatus">לצפיה בסטטוס</button>
+            {newFlag ? <GetStatus getPoint={point}/> : <div></div>}
+
             </Table>
+
             {flag ? alert("הנתונים נשמרו במערכת") : <div></div>}
+         {  console.log(point)} 
 
         </TableContainer>
     );
 }
+
 // export default SetStatus
