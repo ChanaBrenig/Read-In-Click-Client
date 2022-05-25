@@ -43,10 +43,10 @@ export default function SetStatus() {
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
-            .then(data => { (alert("")); setFlag(true) })
+            .then(data => { (alert("")); setFlag(true) ;})
             .catch(err => console.log(err))
     }, [point]);
-
+    console.log(point);
     return (
         <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="caption table">
@@ -68,9 +68,9 @@ export default function SetStatus() {
                                 {row.name}
                             </TableCell>
                             <TableCell align="right"></TableCell>
-                            <TableCell align="right"><button onClick={() => setPoint({ point } + 10)} className="btnSetStatus">10</button></TableCell>
-                            <TableCell align="right"><button onClick={() => setPoint({ point } + 20)} className="btnSetStatus">20</button></TableCell>
-                            <TableCell align="right"><button onClick={() => setPoint({ point } + 30)} className="btnSetStatus">30</button></TableCell>
+                            <TableCell align="right"><button onClick={() => setPoint((point)+ 10)} className="btnSetStatus">10</button></TableCell>
+                            <TableCell align="right"><button onClick={() => setPoint((point)   + 20)} className="btnSetStatus">20</button></TableCell>
+                            <TableCell align="right"><button onClick={() => setPoint((point) + 30)} className="btnSetStatus">30</button></TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

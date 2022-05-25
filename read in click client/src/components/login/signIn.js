@@ -17,6 +17,7 @@ function SignIn() {
 
     signInApi(user) .then(() => {
         debugger
+
         history.push('/choose')
       }) .catch(() => {
         console.log('--error--');
@@ -25,7 +26,7 @@ function SignIn() {
   
   let user = { id }
   return (
-    <div className="generakDivHomePage">
+    <div className="generalDivSignUp">
       <br /> <br /><br /><br /><br /><br />
       <div className="lableLogin"> מספר זהות</div>
       <br />

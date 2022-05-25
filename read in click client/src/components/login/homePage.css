@@ -26,10 +26,10 @@
     height:30px
 }
 .generakDivHomePage{
-    background-image: url('./image/reka1.png');
+    background-image: url('./image/00001.jpg');
     background-repeat:no-repeat;
     background-size: 100%;
-    background-position: center;
+    /* background-position: center; */
     height: 100%;
     width: 100%;
     align-items: center;
