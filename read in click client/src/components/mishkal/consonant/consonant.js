@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ShoWordLong from '../shoWordLong'
+import  '../onesyllable/oneSyllable.css'
 
 
 const Consonant = () => {
@@ -18,12 +19,15 @@ const Consonant = () => {
 
     return (
         <div>
+                        <div className='title'>קריאת מילים בעלות שלוש הברות ומעלה</div>
+
             {/* <button onClick={() => setNikud('migdal')}>migdal</button> */}
             {/* <button onClick={() => setNikud('targil')}>targil</button> */}
             {/* <button onClick={() => setNikud('machsev')}>machsev</button> */}
             {/* <button onClick={() => setNikud('machsev')}>machsev</button> */}
             <button className="btnOneSyllable" onClick={() => setNikud('consonant')}>למעבר למילים =></button>
             <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
+            {flag ? <div className='dd'>מילים בעלות שלוש הברות ומעלה</div>: <div></div>}
 
             {/* <button onClick={() => setNikud('segol')}>segol</button>
             <button onClick={() => setNikud('shuruk')}>shuruk</button>

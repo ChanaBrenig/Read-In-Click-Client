@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ShoWordLong from '../shoWordLong'
+import  '../onesyllable/oneSyllable.css'
 
 
 const Meorav = () => {
@@ -22,8 +23,11 @@ const Meorav = () => {
             {/* <button onClick={() => setNikud('targil')}>targil</button> */}
             {/* <button onClick={() => setNikud('machsev')}>machsev</button> */}
             {/* <button onClick={() => setNikud('machsev')}>machsev</button> */}
+            <div className='title'>קריאת מילים בעלות שתי הברות</div>
+
             <button className="btnOneSyllable" onClick={() => setNikud('meorav')}>למעבר למילים =></button>
             <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
+            {flag ? <div className='dd'>תרגול כללי - מילים בעלות שתי הברות</div>: <div></div>}
 
             {/* <button onClick={() => setNikud('segol')}>segol</button>
             <button onClick={() => setNikud('shuruk')}>shuruk</button>
