@@ -28,6 +28,8 @@ function SignIn() {
   return (
     <div className="generalDivSignUp">
       <br /> <br /><br /><br /><br /><br />
+      <div  className="t1" >כניסה באמצעות תעודת זהות וסיסמא</div>
+      <br/>
       <div className="lableLogin"> מספר זהות</div>
       <br />
       <TextField color="secondary" onChange={(e) => { setId(e.target.value) }} focused />
