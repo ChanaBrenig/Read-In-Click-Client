@@ -20,7 +20,10 @@ const ChooseGame = () => {
     //Downloads
     return (
         <div className="generalDiv">
+                        <div className='div'>באיזה ניקוד נבחר לתרגל?</div>
+
             <div className="btns">
+
                 <button className="btn" onClick={goToGameA}>פתח קמץ</button>
                 <button className="btn" onClick={goToGameB}>צירה וסגול</button>
                 <button className="btn" onClick={goToGameC}>חיריק וחולם</button>
