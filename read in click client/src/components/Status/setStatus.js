@@ -69,14 +69,6 @@ export default function SetStatus() {
     // const getStatus = () => {
     //     history.push('/getStatus')
     // }
-    const url = `http://localhost:3001/setPoints`;
-    useEffect(() => {
-        fetch(url)
-            .then(res => res.json())
-            .then(data => { (alert("")); setFlag(true) ;})
-            .catch(err => console.log(err))
-    }, [point]);
-    console.log(point);
     return (
         <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="caption table">

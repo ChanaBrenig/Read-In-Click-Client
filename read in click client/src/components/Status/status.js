@@ -24,7 +24,7 @@ const Status = () => {
             <h2 className="titleStatus">כאן תוכלו לצפות ולערוך את רמת הידע שלכם בקריאה</h2>
             <img src={welcome} className="phoo"></img>
             <button onClick={setStatus} className="btnStatus">לעריכת הסטטוס</button>
-            <button onClick={getStatus} className="btnStatus">לצפיה בסטטוס</button>
+            {/* <button onClick={getStatus} className="btnStatus">לצפיה בסטטוס</button> */}
 
 
         </div>)

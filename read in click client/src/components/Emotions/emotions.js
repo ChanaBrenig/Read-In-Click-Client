@@ -92,7 +92,7 @@ export default function Emotions() {
       </tr>
       <tr>{PictureList.map((p)=>{return (<td className='td'>{p.title}</td>)})}</tr>
 </table></div>
-   
+<a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>
     <br /><br />
     <div className='td'>רְגָשׁוֹת חִיּוּבִיִּים</div>
     <div

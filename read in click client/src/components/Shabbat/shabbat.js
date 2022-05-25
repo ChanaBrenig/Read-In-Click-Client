@@ -55,6 +55,12 @@ const rows = [
 ];
 
 export default function Shabbat() {
+    const titleStyle = {
+        color: 'rgb(0, 102, 255)',
+        fontSize: 'x-large',
+        fontFamily: "Arial",
+        fontWeight: 'bold'
+    }
     return (
         <TableContainer component={Paper} className="tableShabbat">
             <Table sx={{ minWidth: 650 }} aria-label="caption table" className="tableShabbat">
@@ -63,11 +69,12 @@ export default function Shabbat() {
                 <TableHead>
                     <TableRow>
                         <TableCell></TableCell>
-                        <TableCell align="right">תמונה</TableCell>
-                        <TableCell align="right"></TableCell>
-                        <TableCell align="right"></TableCell>
-                        <TableCell align="right">מה מצויר בתמונה? </TableCell>
-                        <TableCell align="right">בדיקה </TableCell>
+                        
+                        <TableCell align="right" style={titleStyle}>תמונה</TableCell>
+                        <TableCell align="right" style={titleStyle}></TableCell>
+                        <TableCell align="right" style={titleStyle}></TableCell>
+                        <TableCell align="right" style={titleStyle}>עליך להשלים כאן מה מצויר בתמונה </TableCell>
+                        <TableCell align="right" style={titleStyle}>בדיקה </TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>

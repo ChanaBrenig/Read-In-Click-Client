@@ -41,7 +41,7 @@ function SignUp() {
 
     return (
         <div className="generalDivSignUp">
-            <br /><br /><br />
+            <br />
             <div  className="t1" >רישום משתמש חדש וכניסה למערכת</div>
             <br />
             <div className="lableLogin"> שם פרטי</div>

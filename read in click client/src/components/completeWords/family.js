@@ -29,7 +29,8 @@ import { Check } from './stockWords'
 // import { vOrX, CheckFunc } from './stockWords'
 
 const titleStyle = {
-    color: 'rgb(243, 78, 155)',
+    // color: 'rgb(243, 78, 155)',
+    color: 'rgba(36, 202, 3, 0.979)',
     fontSize: 'x-large',
     fontFamily: "Arial",
     fontWeight: 'bold'
@@ -84,6 +85,8 @@ export default function StickyHeadTable() {
         []);
     return (
         <Paper className={classes.root}>
+            <div className='divfamily'>עליך ללחוץ על האות החסרה במילה מתוך המאגר </div>
+
             <TableContainer className={classes.container}>
                 <Table stickyHeader aria-label="sticky table">
                     <TableHead>
