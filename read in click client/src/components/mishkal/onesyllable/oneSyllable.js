@@ -20,7 +20,7 @@ const OneSyllable = () => {
 
     return (
         <div className="">
-            <div className='title'>קריאת מילים בעלות הברה אחת</div>
+            <div className='d1'>קריאת מילים בעלות הברה אחת</div>
             <div style={{textAlign:"center"}}>
             <button className="btnOneSyllable" onClick={() => {setNikud('kamatz'); setName('קמץ')}}>קמץ</button>
             <button className="btnOneSyllable" onClick={() => {setNikud('chirik');setName('חיריק')}}>חיריק</button>

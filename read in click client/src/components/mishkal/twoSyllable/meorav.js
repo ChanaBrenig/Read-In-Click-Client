@@ -23,7 +23,7 @@ const Meorav = () => {
             {/* <button onClick={() => setNikud('targil')}>targil</button> */}
             {/* <button onClick={() => setNikud('machsev')}>machsev</button> */}
             {/* <button onClick={() => setNikud('machsev')}>machsev</button> */}
-            <div className='title'>קריאת מילים בעלות שתי הברות</div>
+            <div className='d1'>קריאת מילים בעלות שתי הברות</div>
 
             <button className="btnOneSyllable" onClick={() => setNikud('meorav')}>למעבר למילים =></button>
             <a href="http://localhost:3000/choose" className="ahref">לעמוד הראשי</a>

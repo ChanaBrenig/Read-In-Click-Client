@@ -19,7 +19,7 @@ const Consonant = () => {
 
     return (
         <div>
-                        <div className='title'>קריאת מילים בעלות שלוש הברות ומעלה</div>
+                        <div className='d1'>קריאת מילים בעלות שלוש הברות ומעלה</div>
 
             {/* <button onClick={() => setNikud('migdal')}>migdal</button> */}
             {/* <button onClick={() => setNikud('targil')}>targil</button> */}

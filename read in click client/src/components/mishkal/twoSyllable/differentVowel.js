@@ -22,7 +22,7 @@ const DifferentVowel = () => {
  
     return (
         <div className="generalOneSyllable">
-        <div className='title'>קריאת מילים בעלות שתי הברות שונות</div>
+        <div className='d1'>קריאת מילים בעלות שתי הברות שונות</div>
 
             <div className='m'><table><tr>
              <td><button className="btnOneSyllable" onClick={() => {setNikud('kubutzkamatz');setName('קובוץ קמץ')}}>קובוץ קמץ</button></td>

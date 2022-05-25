@@ -35,6 +35,7 @@ const Choose = () => {
     //Downloads
     return (
         <div className="generalDiv">
+            <div className='div'>התרגילים באתר שלנו</div>
             <div className="btns">
                 <button className="btn" onClick={goToMishkal}>משקל</button>
                 <button className="btn" variant="contained" onClick={goToCompleteWordsFamily}>משפחה </button>

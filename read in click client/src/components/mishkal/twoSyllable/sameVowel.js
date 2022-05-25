@@ -18,7 +18,7 @@ const SameVowel = () => {
 
     return (
         <div >
-            <div className='title'>קריאת מילים בעלות שתי הברות דומות</div>
+            <div className='d1'>קריאת מילים בעלות שתי הברות דומות</div>
             <div className='mm'>
             <table ><tr>
             <td><button className="btnOneSyllable" onClick={() => {setNikud('kamatzkamatz'); setName('קמץ או פתח')}}>קמץ\ פתח</button></td>
